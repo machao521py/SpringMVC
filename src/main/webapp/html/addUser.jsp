@@ -30,7 +30,7 @@
 <div class="container">
   <h1>SpringMVC 添加用户</h1>
   <hr/>
-  <form:form action="/addUserPost" method="post" commandName="user" role="form">
+  <form:form action="${pageContext.request.contextPath}/addUserPost" method="post" commandName="user" role="form">
     <div class="form-group">
       <label for="firstName">First Name:</label>
       <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter FirstName:"/>
